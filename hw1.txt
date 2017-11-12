@@ -1,0 +1,58 @@
+
+This problem set covers topics related to arrays, stacks, queues, and
+linked lists. You are supposed to use your own implementation(s) of any
+basic data structures required and not borrow from library versions of
+the same. 
+
+Any detected case of copying will mean that you get a zero score in the
+entire homework for both the source of the copy and the one who copies. 
+Copying from the web, from a friend, is not permitted. 
+
+Problem 1. The following game is played  by a team of n+1 people and one
+opponent (M). One of the n+1 members of the team is designated as the captain.
+The opponent M displays a target number S. Each of the other n people are
+offered a coupon that contains a number, not necessarily positive. These n
+people are ordered as 1 to n and are offered the number in that order. The team
+wins if there exists a consecutive set of people numbered between 1 and n, both
+inclusive, such that the sum of the numbers on the coupons held by them is at
+most S. 
+
+Problem 2. Consider a stack and a sequence of push and pop operations not
+necessarily in any order. To simplify the problem we will assume that the
+pushes push the elements 1 to n in that order. (In other words, the operations
+are push(1), push(2), ..., push(n), mixed in some order with pop operations.)
+Now, we are given a sequence of integers 1 through n that is claimed to be the
+output of the pop operations. Write a program to test if the claim is correct
+or not. If the claim is incorrect, idenitfy the first place of the
+incorrectness.
+
+Problem 3. You are given an array A of n elements. Moving an element of A from
+an index i to another index j, either in the same array A or to a different
+array B,  incurs a cost of c(i,j). This cost function
+c(i,j) is specified separately. Find a way to sort A using the smallest total
+cost possible. 
+(a) Do the problem when c(i,j) = abs(i-j).
+(b) Do the problem when c(i,j) is 1 if abs(i-j) is equal to 1, and (i-j)^2
+otherwise. 
+
+Your program should output the total cost required by your approach. 
+
+
+Problem 4. Large Integer Arithmetic using Linked Lists: Consider performing
+operations such as addition, multiplication, and GCD (Euclid's algorithm) on
+integers that are about 2000 bits (in base 2) long. Represent integers as
+collections of 32 bit numbers with appropriate exponents.  For instance, a5b3
+c3d2 55a1 is represented using |16|a5b3|->|8|c3d2|->|1|55a1 . 
+
+Write suitable programs to add, multiply, and find the GCD of two such long
+integers. 
+
+Problem 5. You are given k arrays each containing n elements. Given an integer
+r, find the element that has a rank r over all the nk elements. You can assume
+that the elements are all distinct.
+
+
+Problem 6. Row minima: Consdier an nxn  matrix to be happy if the column
+indices of the minima in rows 1 through n in that order  form a non-decreasing
+seuqence. Given such a happy matrix, design an algorithm to find the column
+indices of the minimum element in each row. 

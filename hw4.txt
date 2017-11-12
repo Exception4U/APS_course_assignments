@@ -1,0 +1,34 @@
+This is NOT a programming homework. You are required to submit your
+hand-written or typeset answers in class. Any cases of copying will
+result in getting a zero score for this HW and the extent of loss
+can go beyond.
+
+
+Q1. Consider the implementation of the push and pop operations of a 
+stack using queues. Write the pseudocode of these operations in terms
+of queue operations. Now, use an appropriate potential function to 
+obtain the amortized cost of the push and pop operations.
+
+Q2. Redo the calculations of the dynamic array when the goal is to 
+keep the load factor of the table at least 2/5. The point at which 
+you do an expansion is left as a choice for you to use. You should
+demonstrate your analysis with a potential function and its use.
+
+
+Q3. Consider the randomized hashing studied in class. We showed that
+out of  n elements hashed using a hash function drawn uniformly at random 
+from a universal family of hash function, if n_i elements hash to slot i,
+then the expected value of the sum of squares of n_i  is O(n). What is
+the expected value of the sum of the fourth powers of n_i? Will there
+be any advantage in therefore using the above observation in the hashing
+approach.
+
+Q4. Consider the stack with an augmented operations: MultiPop(k) for
+k at least 1 that pops the top k elements of hte stack or until the stack 
+is empty. Multipush(r, A) where r elements of the array A, which is also
+of size r are pushed onto the stack. We pretend that for now, the stack 
+never gets full. (For instance, as in  a linked list implementation).
+
+Under what conditions on k and r does the above data structure have
+ O(1) amortized time per push, pop, Multipush and MultiPop? Show your
+analysis by using appropriate potential functions.

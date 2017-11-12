@@ -1,0 +1,64 @@
+Q1. A graph is said to be a directed acyclic graph if the graphs is directed
+and does not have any directed cycles. These are often called as DAGs for 
+short. One of the interesting properties of DAGs is that given any pair of
+vertices s and t in such a graph, one can count the number of directed paths
+from s to t very efficiently. Solve the problem and write a program to implement
+your solution. 
+
+The graph itself will be specified by listing the neighbors of each vertex in 
+one line each. The vertices s and t are specified as the first line along with 
+the number of vertices n as follows.
+
+
+n  s   t
+u1  u2  u3
+x1 x2  x3
+.
+.
+z1 z2
+
+The output is the number of paths from s to t.
+-----------------------------------------------------------------------------------
+Q2. Let G be a directed graph. Find another directed graph H that has as least
+number of edges as possible with the following conditions. 
+
+(i) The number of vertices in G and H are equal
+(ii) The partitions corresponding to  the SCCs of G are identical to the partitions
+corresponding to the SCCs of H.
+
+The graph G is given as in the above problem except that the first line 
+contains the number of vertices in G. The output is the number of edges in H.
+
+-----------------------------------------------------------------------------------
+Q3. As part of the CloudOffice project, you are implementing functionality equivalent 
+to that of a spreadsheet. One important component of this functionality is to
+allow users to specify the contents of a cell C as a function of other cells. Since 
+the sheet will evaluate the function as it shows the contents of C, you write  a
+comiler for such expression evaluation. You notice that this compler breaks
+down once in a while. Over a long debugging session, you realize that the reason
+is ill-specified expression that have the function at cell C depend on the contents
+of another cell C' whereas also the contents of C' depend on the contents of 
+cell C. (The dependency can be transitive too meaning, the contents of C depend on
+C1, whose contents depend on another cell C2, ..., the contents of Cr depend 
+on the contents of cell C.) 
+
+To warn the user in specifying such ill-specified expressions, you want to 
+write a routine that checks whether there are such dependencies. 
+
+The list of dependencies is given as a graph as in Q2. The first line of the input 
+contains the number of vertices and the  the cell id for which we want to test
+for this depencency. Write a program that answers YES or NO depneding on whether the 
+contents of the cell under test is ill-specified.
+
+-----------------------------------------------------------------------------------
+Q4.  Suggest an algorithm to determine whether a directed graph has a cycle 
+that has an  odd length. The length of a  directed cycle is the number of edges
+in the cycle. Implement your algorithm and answer YES/NO. The graph is given as
+in Q2.
+
+-----------------------------------------------------------------------------------
+Q5. You are given a directed acyclic graph G with weights on the edges. You are
+also given two other paramters, s -- a start or source vertex, and T a threshold
+on the distance. List all vertices that are within a distance T from s. Distance
+is measured as the length of the shortest path from s.
+-----------------------------------------------------------------------------------
